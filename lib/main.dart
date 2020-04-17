@@ -38,13 +38,47 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              Container(
-                child: Row(
-                  children: <Widget>[
-                    /* Icon(
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
                       Icons.phone,
-                    ), */
-                  ],
+                      color: Colors.teal,
+                    ),
+                    title:  Text(
+                      '+92 321 1234567',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20,
+                      ),
+                    ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title:  Text(
+                      'justehmadsaeed@gmail.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 18,
+                      ),
+                    ),
                 ),
               ),
             ],
