@@ -14,7 +14,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="mi_card"
+        android:label="Mi Card"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
