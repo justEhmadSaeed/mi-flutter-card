@@ -83,8 +83,43 @@ class MyApp extends StatelessWidget {
               ),
             ],
           ),
+
+
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){},
+          backgroundColor: Colors.white,
+          child: Icon(Icons.add,color: Colors.teal.shade900,),
+        ),
+
+        bottomNavigationBar: BottomAppBar(
+          color: Colors.teal,
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20.0,vertical:10.0),
+                  child: Icon(Icons.arrow_back,color: Colors.teal.shade900,),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20.0,vertical:10.0),
+                  child: Icon(Icons.arrow_forward,color: Colors.teal.shade900,),
+                )
+
+              ],
+
+            ),
+          ),
+          shape: CircularNotchedRectangle(),
         ),
       ),
     );
   }
 }
+
